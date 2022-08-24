@@ -5,6 +5,7 @@ import './App.css'
 import StateOfUse from './components/StateOfUse';
 import StateOfEffect from './components/StateOfEffect';
 import StateOfReducer from './components/StateOfReducer';
+import StateOfRef from './components/StateOfRef';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       <div className="grey-background">
         <p> This is my UseReducer example:</p>
         <StateOfReducer />
+      </div>
+      <div className="white-background">
+        <p> This is my UseRef example:</p>
+        <StateOfRef />
       </div>
     </div>
   );
