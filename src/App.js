@@ -6,6 +6,7 @@ import StateOfUse from './components/StateOfUse';
 import StateOfEffect from './components/StateOfEffect';
 import StateOfReducer from './components/StateOfReducer';
 import StateOfRef from './components/StateOfRef';
+import StateOfLayoutEffect from './components/StateOfLayoutEffect';
 
 function App() {
   return (
@@ -17,16 +18,20 @@ function App() {
         <StateOfUse />
       </div>
       <div className="white-background">
-        <p> This is my UseEffect example:</p>
+        <p> This is my useEffect example:</p>
         <StateOfEffect />
       </div>
       <div className="grey-background">
-        <p> This is my UseReducer example:</p>
+        <p> This is my useReducer example:</p>
         <StateOfReducer />
       </div>
       <div className="white-background">
-        <p> This is my UseRef example:</p>
+        <p> This is my useRef example:</p>
         <StateOfRef />
+      </div>
+      <div className="grey-background">
+        <p> This is my useLayoutEffect example:</p>
+        <StateOfLayoutEffect />
       </div>
     </div>
   );
