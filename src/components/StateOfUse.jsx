@@ -20,12 +20,12 @@ function StateOfUse() {
         // Or you can call in a function
         <div>
             <div>
+                <p>This button below will increase the count when you type in the input below, this is because it calls the same function for count + 1 as the event.value update</p>
                 <p>{Size}</p>
-
                 <button onClick={IncreaseFunction}>Use all my useState stuff</button>
-
             </div>
             <div>
+                <p>Enter text here to magically display it below:</p>
                 <input placeholder='enter your text' onChange={IncreaseFunction}></input>
                 <p>{inputValue}</p>
             </div>
