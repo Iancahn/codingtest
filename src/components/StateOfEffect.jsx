@@ -1,11 +1,17 @@
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 
-// function StateOfEffect() {
-//     return (
-//         <div>
+function StateOfEffect() {
 
-//         </div>
-//     )
-// }
+    useEffect(() => {
+        console.log("hello my people")
+    });
 
-// export default StateOfEffect;
+    return (
+        <div>
+            <h1>Hello World</h1>
+        </div>
+    )
+}
+
+export default StateOfEffect;
