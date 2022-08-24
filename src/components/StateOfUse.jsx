@@ -20,7 +20,8 @@ function StateOfUse() {
         // Or you can call in a function
         <div>
             <div>
-                <p>This button below will increase the count when you type in the input below, this is because it calls the same function for count + 1 as the event.value update</p>
+                <p>This button and input field will BOTH will increase the count like when you type in the input below, this is because it calls the same function for count + 1 as the event.value update</p>
+                <p>I can easily fix this by just assigning the input field onchange to a different/new function.</p>
                 <p>{Size}</p>
                 <button onClick={IncreaseFunction}>Use all my useState stuff</button>
             </div>

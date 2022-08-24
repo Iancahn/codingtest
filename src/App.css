@@ -32,7 +32,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.grey-background {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(185, 185, 185);
+}
+
+.white-background {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
