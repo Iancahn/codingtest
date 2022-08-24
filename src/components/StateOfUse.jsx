@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+
+function StateOfUse() {
+    const [Size, setSize] = useState(0);
+    const [inputValue, setInputValue] = useState("")
+
+    function IncreaseFunction(event) {
+        // i do know this function is called on each button type, so its increasing count per lettertype, i can easily fix it, but its cool
+        setSize(Size + 1);
+        const newValue = event.target.value;
+        setInputValue(newValue);
+    }
+    return (
+        // <div>
+        //     <p>{Size}</p>
+        //     <button onClick={() => (
+        //         setSize(Size + 1)
+        //     )}>Increase the Size</button>
+        // </div>
+        // Or you can call in a function
+        <div>
+            <div>
+                <p>{Size}</p>
+
+                <button onClick={IncreaseFunction}>Use all my useState stuff</button>
+
+            </div>
+            <div>
+                <input placeholder='enter your text' onChange={IncreaseFunction}></input>
+                <p>{inputValue}</p>
+            </div>
+        </div>
+    )
+}
+
+export default StateOfUse;

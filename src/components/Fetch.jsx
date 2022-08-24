@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function Fetch() {
     const [posts, setPosts] = useState([]);
-    const [randomUserDataJSON, setRandomUserDataJSON] = useState('');
+    const [userInfos, setUserInfos] = useState([]);
 
     useEffect(() => {
         fetch('https://randomuser.me/api/')
@@ -10,7 +10,7 @@ function Fetch() {
             .then((data) => {
                 console.log(data);
                 setPosts(data);
-                return setRandomUserDataJSON(JSON.stringify(data));
+                return setUserInfos(data.results)
             })
             .catch((err) => {
                 console.log(err.message);
@@ -19,7 +19,9 @@ function Fetch() {
 
     return (
         <div>
-            <h2>{randomUserDataJSON}</h2>
+            <pre>
+                <h2>{userInfos}</h2>
+            </pre>
         </div>
     )
 }
