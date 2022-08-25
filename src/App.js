@@ -8,6 +8,7 @@ import StateOfReducer from './components/StateOfReducer';
 import StateOfRef from './components/StateOfRef';
 import StateOfLayoutEffect from './components/StateOfLayoutEffect';
 import StateOfImperativeHandle from './components/StateOfImperativeHandle';
+import StateOfContext from './components/StateOfContext';
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
       <div className="white-background">
         <p> 06 | This is my useImperativeHandle example:</p>
         <StateOfImperativeHandle />
+      </div>
+      <div className="grey-background">
+        <p> 07 | This is my useContext example:</p>
+        <StateOfContext />
       </div>
     </div>
   );
