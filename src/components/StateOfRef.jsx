@@ -11,7 +11,7 @@ function StateOfRef() {
 
     return (
         <div>
-            <h1>Clicking the button will call the clickHandler, which inturns logs the inputRef.CURRENT.value</h1>
+            <h1>Clicking the button will call the clickHandler, which inturns logs the inputRef.CURRENT.value, but also calls forus to the inputfield.</h1>
             <input type="text" placeholder='Enter your text here' ref={inputRef} />
             <button onClick={clickHandler}>Change Name</button>
         </div>
